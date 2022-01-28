@@ -16,10 +16,7 @@ const main = async () => {
     await createConnection({
         type:'postgres',
         host: 'localhost',
-        // username: 'DavidChen',
-        // password: 'blahdo',
         database: 'vstodo',
-        // port: 5432,
         dropSchema: true,
         entities: [join(__dirname, "./entities/*.*")],
         logging: !_prod_,
